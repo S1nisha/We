@@ -1,0 +1,159 @@
+
+h1{
+    padding-top: 13%;
+    padding-left: 9%;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size:70px;
+    position: static;
+    bottom:30%;
+    letter-spacing:0.3rem;
+    opacity 1;
+}
+
+h3{
+    padding-left: 9%;
+    font-size: 28px;
+    font-family:Comic Sans MS, Comic Sans, cursive;
+    letter-spacing:0.1rem;
+}
+.picture-position{
+    padding-top: 30px;
+    position: absolute;
+    right:-10px;
+    display flex;
+    justify-content: self-end;
+    align-items: end;
+}
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background{
+
+}
+body{
+    height: 100vh;
+
+    background:linear-gradient(70deg,#ecf0f1 40%,#0be881 30%);
+    background-size: cover;
+
+
+}
+button{
+    background:none;
+    position: absolute;
+    text-align: center;
+    font-size:35px;
+    border-width: 7px;
+    border-color:#2c3e50;
+    padding-left: 48px;
+    padding-right:48px;
+    padding-bottom: 28px;
+    padding-top:28px;
+
+    top:57%;
+   left:20%;
+    border-radius:25px;
+}
+
+button:hover{
+    transition: 0.2s;
+    background-color: #0be881;
+    color:#ecf0f1;
+    border-color:#7ed6df;
+}
+button:after{
+    transition: 0.4s;
+}
+
+
+
+
+.icons{
+
+    position: absolute;
+    right: 33%;
+    bottom: 12%;
+    width: 80%;
+    height:13%;
+    color: white;
+    text-align: center;
+}
+.middle{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+.btn{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background: #f1f1f1;
+    margin-right: 30px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #0be881;
+    overflow: hidden;
+    position: relative;
+}
+/*Ovoj del e za icon vo button*/
+.btn i{
+    line-height: 100px;
+    font-size: 34px;
+    transition: 0.2s linear;
+}
+/*Ovoj del e za icon vo button pri hover*/
+.btn:hover i{
+    transform: scale(1.4);
+    color:#f1f1f1;
+}
+/*Button pred hover*/
+.btn::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 130%;
+    background: #0be881;
+    transform: rotate(45deg);
+    left:-110;
+    top: 120%;
+}
+
+.btn:hover::before{
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+/*So ovaa se podesuva animacijata*/
+@keyframes aaa {
+    0%{
+        left: -110%;
+        top: 90%;
+    }
+    50%{
+        left: 10%;
+        top: -30%;
+    }
+    100%{
+        top: -10%;
+        left: -10%;
+    }
+}
+
+
+#footer{
+    text-align: center;
+    left:0;
+    bottom:0;
+    position: absolute;
+}
+#footer>p{
+    text-align: center;
+    font-size:21px;
+    padding-left:750px;
+}
